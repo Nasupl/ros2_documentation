@@ -1,0 +1,519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Open Robotics
+# This file is distributed under the same license as the ros2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ros2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-22 13:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/Installation/Windows-Development-Setup.rst:2
+msgid "Building ROS 2 on Windows"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:6
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:8
+msgid ""
+"This guide is about how to set up a development environment for ROS 2 on "
+"Windows."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:11
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:13
+msgid ""
+"First follow the steps for `Installing Prerequisites <windows-install-"
+"binary-installing-prerequisites>` on the Binary Installation page."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:15
+msgid "Stop and return here when you reach the \"Downloading ROS 2\" section."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:18
+msgid "Additional prerequisites"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:20
+msgid ""
+"When building from source you'll need a few additional prerequisites "
+"installed."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:23
+msgid "Install additional prerequisites from Chocolatey"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:25
+msgid "First install git:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:31
+msgid ""
+"You will need to append the Git cmd folder ``C:\\Program "
+"Files\\Git\\cmd`` to the PATH (you can do this by clicking the Windows "
+"icon, typing \"Environment Variables\", then clicking on \"Edit the "
+"system environment variables\". In the resulting dialog, click "
+"\"Environment Variables\", the click \"Path\" on the bottom pane, then "
+"click \"Edit\" and add the path)."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:36
+msgid "Install developer tools"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:38
+msgid ""
+"Now we are ready to install some our tools that we use to help in "
+"developing ROS 2."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:40
+msgid "Let's start with ``vcstool``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:46
+msgid ""
+"You can test it out by just running ``vcs`` (you should be able to do "
+"this in the same cmd prompt)."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:48
+msgid "Next, install ``colcon``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:54
+msgid ""
+"You can test it out by just running ``colcon`` (you should be able to do "
+"this in the same cmd prompt)."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:56
+msgid "Also, you should install ``curl``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:63
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:65
+msgid "Next install the latest version of ``setuptools`` and ``pip``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:71
+msgid ""
+"Where ``PATH_TO_PYTHON_EXECUTABLE`` looks like: "
+"``c:\\python38\\python.exe``"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:73
+msgid "Then you can continue installing other Python dependencies:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:79
+msgid "Next install testing tools like ``pytest`` and others:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:85
+msgid "Next install linters and checkers like ``flake8`` and others:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:91
+msgid "Next install cppcheck:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:97
+msgid "Next install xmllint:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:99
+msgid ""
+"Download the `64 bit binary archives "
+"<https://www.zlatkovic.com/pub/libxml/64bit/>`__ of ``libxml2`` (and its "
+"dependencies ``iconv`` and ``zlib``) from "
+"https://www.zlatkovic.com/projects/libxml/"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:100
+msgid "Unpack all archives into e.g. ``C:\\xmllint``"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:101
+msgid "Add ``C:\\xmllint\\bin`` to the ``PATH``."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:104
+msgid "Install Qt5"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:106
+msgid ""
+"This section is only required if you are building rviz, but it comes with"
+" our default set of sources, so if you don't know, then assume you are "
+"building it."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:108
+msgid "First get the installer from Qt's website:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:110
+msgid "https://www.qt.io/download"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:112
+msgid ""
+"Select the Open Source version and then the ``Qt Online Installer for "
+"Windows``."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:114
+msgid "Run the installer and install Qt5."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:116
+msgid ""
+"We recommend you install it to the default location of ``C:\\Qt``, but if"
+" you choose somewhere else, make sure to update the paths below "
+"accordingly. When selecting components to install, the only thing you "
+"absolutely need for Foxy and later is the appropriate MSVC 64-bit "
+"component under the ``Qt`` -> ``Qt 5.15.0`` tree. We're using ``5.15.0`` "
+"as of the writing of this document and that's what we recommend since "
+"that's all we test on Windows, but later version will probably work too. "
+"For Foxy and later, be sure to select ``MSVC 2019 64-bit``. After that, "
+"the default settings are fine."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:122
+msgid ""
+"Finally, set the ``Qt5_DIR`` environment variable in the ``cmd.exe`` "
+"where you intend to build so that CMake can find it:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:128
+msgid ""
+"You could set it permanently with ``setx -m Qt5_DIR "
+"C:\\Qt\\5.15.0\\msvc2019_64`` instead, but that requires Administrator."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:132
+msgid ""
+"This path might change based on which MSVC version you're using or if you"
+" installed it to a different directory."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:135
+msgid "Get the ROS 2 code"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:137
+msgid "Now that we have the development tools we can get the ROS 2 source code."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:139
+msgid "First setup a development folder, for example ``C:\\dev\\ros2_foxy``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:146
+msgid "Get the ``ros2.repos`` file which defines the repositories to clone from:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:156
+msgid ""
+"Next you can use ``vcs`` to import the repositories listed in the "
+"``ros2.repos`` file:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:167
+msgid "Install additional DDS implementations (optional)"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:169
+msgid ""
+"If you would like to use another DDS or RTPS vendor besides the default, "
+"eProsima's Fast RTPS, you can find instructions `here <DDS-"
+"Implementations>`."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:172
+msgid "Build the ROS 2 code"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:176
+msgid ""
+"To build ROS 2 you will need a Visual Studio Command Prompt (\"x64 Native"
+" Tools Command Prompt for VS 2019\") running as Administrator."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:178
+msgid ""
+"Fast RTPS is bundled with the ROS 2 source and will always be built "
+"unless you put an ``AMENT_IGNORE`` file in the ``src\\eProsima`` folder."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:180
+msgid "To build the ``\\dev\\ros2_foxy`` folder tree:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:188
+msgid ""
+"We're using ``--merge-install`` here to avoid a ``PATH`` variable that is"
+" too long at the end of the build. If you're adapting these instructions "
+"to build a smaller workspace then you might be able to use the default "
+"behavior which is isolated install, i.e. where each package is installed "
+"to a different folder."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:193
+msgid ""
+"If you are doing a debug build use ``python_d path\\to\\colcon_executable"
+" build --cmake-args -DCMAKE_BUILD_TYPE=Debug``. See `Extra stuff for "
+"debug mode`_ for more info on running Python code in debug builds on "
+"Windows."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:197
+msgid "Environment setup"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:199
+msgid ""
+"Start a command shell and source the ROS 2 setup file to set up the "
+"workspace:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:205
+msgid ""
+"This will automatically set up the environment for any DDS vendors that "
+"support was built for."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:207
+msgid ""
+"It is normal that the previous command, if nothing else went wrong, "
+"outputs \"The system cannot find the path specified.\" exactly once."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:210
+msgid "Test and run"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:212
+msgid ""
+"Note that the first time you run any executable you will have to allow "
+"access to the network through a Windows Firewall popup."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:214
+msgid "You can run the tests using this command:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:222
+msgid ""
+"``--merge-install`` should only be used if it was also used in the build "
+"step."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:224
+msgid "Afterwards you can get a summary of the tests using this command:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:230
+msgid ""
+"To run the examples, first open a clean new ``cmd.exe`` and set up the "
+"workspace by sourcing the ``local_setup.bat`` file. Then, run a C++ "
+"``talker``\\ :"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:238
+msgid ""
+"In a separate shell you can do the same, but instead run a Python "
+"``listener``\\ :"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:245
+msgid ""
+"You should see the ``talker`` saying that it's ``Publishing`` messages "
+"and the ``listener`` saying ``I heard`` those messages. This verifies "
+"both the C++ and Python APIs are working properly. Hooray!"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:251
+msgid ""
+"It is not recommended to build in the same cmd prompt that you've sourced"
+" the ``local_setup.bat``."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:254
+msgid "Next steps after installing"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:255
+msgid ""
+"Continue with the `tutorials and demos </Tutorials>` to configure your "
+"environment, create your own workspace and packages, and learn ROS 2 core"
+" concepts."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:258
+msgid "Using the ROS 1 bridge"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:259
+msgid ""
+"The ROS 1 bridge can connect topics from ROS 1 to ROS 2 and vice-versa. "
+"See the dedicated `documentation "
+"<https://github.com/ros2/ros1_bridge/blob/master/README.md>`__ on how to "
+"build and use the ROS 1 bridge."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:262
+msgid "Additional RMW implementations (optional)"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:263
+msgid ""
+"The default middleware that ROS 2 uses is ``Fast-RTPS``, but the "
+"middleware (RMW) can be replaced at runtime. See the `guide <../Guides"
+"/Working-with-multiple-RMW-implementations>` on how to work with multiple"
+" RMWs."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:268
+msgid "Extra stuff for Debug mode"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:270
+msgid ""
+"If you want to be able to run all the tests in Debug mode, you'll need to"
+" install a few more things:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:273
+msgid "To be able to extract the Python source tarball, you can use PeaZip:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:280
+msgid ""
+"You'll also need SVN, since some of the Python source-build dependencies "
+"are checked out via SVN:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:287
+msgid ""
+"You'll need to quit and restart the command prompt after installing the "
+"above."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:288
+msgid "Get and extract the Python 3.8.3 source from the ``tgz``:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:290
+msgid "https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:291
+msgid ""
+"To keep these instructions concise, please extract it to "
+"``C:\\dev\\Python-3.8.3``"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:293
+msgid ""
+"Now, build the Python source in debug mode from a Visual Studio command "
+"prompt:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:302
+msgid ""
+"Finally, copy the build products into the Python38 installation "
+"directories, next to the Release-mode Python executable and DLL's:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:315
+msgid "Now, from a fresh command prompt, make sure that ``python_d`` works:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:322
+msgid ""
+"Once you have verified the operation of ``python_d``, it is necessary to "
+"reinstall a few dependencies with the debug-enabled libraries:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:329
+msgid "To verify the installation of these dependencies:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:338
+msgid ""
+"When you wish to return to building release binaries, it is necessary to "
+"uninstall the debug variants and use the release variants:"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:345
+msgid ""
+"To create executables python scripts(.exe), python_d should be used to "
+"invoke colcon, along with the corresponding CMake build type. If you "
+"installed colcon using pip, the path to the colcon executable can be "
+"found with ``pip show colcon-core``."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:352
+msgid "Hooray, you're done!"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:355
+msgid "Stay up to date"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:357
+msgid ""
+"See :ref:`MaintainingSource` to periodically refresh your source "
+"installation."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:360
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:362
+msgid ""
+"Troubleshooting techniques can be found :ref:`here <windows-"
+"troubleshooting>`."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:365
+msgid "Uninstall"
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:367
+msgid ""
+"If you installed your workspace with colcon as instructed above, "
+"\"uninstalling\" could be just a matter of opening a new terminal and not"
+" sourcing the workspace's ``setup`` file. This way, your environment will"
+" behave as though there is no Foxy install on your system."
+msgstr ""
+
+#: ../../source/Installation/Windows-Development-Setup.rst:370
+msgid ""
+"If you're also trying to free up space, you can delete the entire "
+"workspace directory with:"
+msgstr ""
+

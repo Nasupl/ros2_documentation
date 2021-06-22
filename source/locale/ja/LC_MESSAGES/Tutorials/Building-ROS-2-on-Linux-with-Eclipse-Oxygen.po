@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Open Robotics
+# This file is distributed under the same license as the ros2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ros2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-22 13:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:6
+msgid "Building ROS 2 on Linux with Eclipse Oxygen [community-contributed]"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:9
+msgid ""
+"**Some people have reported issues with this tutorial. If the steps work "
+"for you please leave a comment on https://github.com/ros2/ros2/issues/495"
+" . If the steps don't work then please comment with the first step that "
+"didn't work.**"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:13
+msgid ""
+"This tutorial is based on a clean ubuntu-16.04.2 install and eclipse "
+"oxygen with egit. It uses RTI Connext as middleware for Realtime "
+"performance. The `original Install page <../Installation/Ubuntu-"
+"Development-Setup>` is perhaps more up-to-date, so check it for info."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:15
+msgid "Install:"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:27
+msgid "Then install"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:33
+msgid ""
+"Create an eclipse workspace named ros2_ws (the name does not need to be "
+"ros2_ws)."
+msgstr ""
+
+msgid "eclipse-1"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:40
+msgid ""
+"Inside this eclipse-workspace create a C++ Project. This option creates "
+"an indexer for code-completion."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:48
+msgid "Name the project ros2_ws."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:55
+msgid ""
+"The project and some includes are shown. The includes don't reside in our"
+" workspace, so don't remove them, they are for the indexer."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:63
+msgid "Create a folder inside our project, named \"src\"."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:70
+msgid ""
+"The folder now exists in the project. This folder also exist in the "
+"workspace. Next go to a console and switch to the directory "
+"/home/ros/ros2_ws/ros2_ws. There enter:"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:80
+msgid ""
+"Add export "
+"RTI_LICENSE_FILE=/home/ros/rti_connext_dds-5.3.1/rti_license.dat to "
+".bashrc and source it."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:88
+msgid ""
+"An RTI license is now needed, which we can get on their website. Refer to"
+" `Ubuntu Linux Development Setup page <../Installation/Ubuntu-"
+"Development-Setup>`. The RTI license file will be directly sent via email"
+" after sign-up."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:92
+msgid ""
+"In the email is a link to the RTI software to download. Download the "
+"file, then run \"chmod +x\" on it to make it runnable."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:106
+msgid "Choose the home directory to install."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:125
+msgid ""
+"In the Launcher which started, select the RTI license file and copy it "
+"global."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:132
+msgid "Select the install button."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:139
+msgid "Install the security package from RTI software."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:146
+msgid "And the openssl package."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:153
+msgid ""
+"Unpack the openssl-1.0.2n package and copy it to the RTI install "
+"directory. source "
+"/home/ros/rti_connext_dds-5.3.1/resource/scripts/rtisetenv_x64Linux3gcc5.4.0.bash"
+" in a console and export RMW_IMPLEMENTATION=rmw_connext_cpp."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:156
+msgid ""
+"Close eclipse-IDE and open it from the shell we sourced all the scripts "
+"from above. Open Project->Preferences in Eclipse and go to Environment."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:165
+msgid ""
+"In Eclipse enter environment variables. The value of the variables can be"
+" obtained by running \"env > /tmp/out\", then source the ROS 2 "
+"local_setup.bash, then \"env > /tmp/out1\" and \"diff /tmp/out "
+"/tmp/out1\". The difference in that output is what should be entered into"
+" Eclipse environment variables so that Eclipse knows about e.g. the new "
+"PATH variable."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:180
+msgid "Go to Builders and click the \"New\" button."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:187
+msgid "Enter the ament.py settings."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:194
+msgid "Unselect CDT-Builder."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:201
+msgid ""
+"Go to C++ Build and delete the build command make, because we'll use "
+"ament.py."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:208
+msgid "Now right-click and run \"Build Project\"."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:210
+msgid ""
+"HINT: if you see the error error: NDDSHOME set to  but could neither find"
+" all optimized libraries nor all debug libraries Delete the "
+"/home/ros/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0/5.3.1/5.3.1 "
+"directory with duplicated libraries."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:220
+msgid ""
+"Now open two consoles, source ros2_ws/install/local_setup.bash in both "
+"consoles and run talker and listener"
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:227
+msgid "In the Eclipse Project, go to git-repositories-view and import local repo."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:234
+msgid ""
+"Select our directory and select the repository we are interested in "
+"seeing. This will allow us to get git information about those "
+"repositories."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:242
+msgid ""
+"After adding the git repositories to the git-repository-view, right-click"
+" on it and select \"Import projects\"."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:249
+msgid "The import source is the directory of our project."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:256
+msgid ""
+"On the left hand side in the Project Explorer view we can see that this "
+"project is next to our ros2_ws project. Both use the same files, but one "
+"is linked with egit and can show git information, while the other cannot."
+" Open the files from the project which is linked to Egit."
+msgstr ""
+
+#: ../../source/Tutorials/Building-ROS-2-on-Linux-with-Eclipse-Oxygen.rst:265
+msgid ""
+"Below a file linked with Egit is shown. Right-click beside the line "
+"number in the editor and choose \"Show Revision information\" from the "
+"pop-up dialog, then you can see commit information if you hover over it "
+"with the mouse."
+msgstr ""
+
