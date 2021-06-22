@@ -57,7 +57,11 @@ Also, you should install ``curl``:
 
 .. code-block:: bash
 
+<<<<<<< HEAD
    > choco install -y curl
+=======
+   > pip install -U colcon-common-extensions coverage flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes mock mypy==0.761 pep8 pydocstyle pytest pytest-mock vcstool
+>>>>>>> eae4669 (Pin mypy to version 0.761 to match Ubuntu Focal. (#1692))
 
 Install dependencies
 --------------------
